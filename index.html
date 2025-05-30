@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">It's Me, Franciss!</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="btn small">Toggle Theme</button>
+
+  <!-- Hero Section -->
+    <section id="hero">
+    <div class="hero-content" data-aos="zoom-in">
+        <dotlottie-player
+        src="https://lottie.host/767fe535-606a-4815-82ca-ae76bb11131b/vOU0TKVkGR.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+        ></dotlottie-player>
+        <h1>Hello, It's Me <span class="highlight">Franciss!</span></h1>
+        <p>Aspiring Full-Stack Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+    </section>
+
+  <!-- About Me Section -->
+    <section id="about" data-aos="fade-up">
+    <h2>💼 About Me</h2>
+    <div class="about-content">
+        <p>
+        Hello! I'm <strong>Remuel Franciss Legaspi Ormasa</strong>, a dedicated and passionate IT graduate and current 
+        System Administrator at Trade Blvd. I specialize in full-stack development using PHP, MySQL, JavaScript, HTML, and CSS, 
+        with a strong focus on building practical, user-centered systems that solve real-world problems.
+        </p>
+
+        <p>Over the past few years, I've developed and contributed to several impactful projects, including:</p>
+
+        <ul class="about-list">
+        <li>🏀 <strong>Basketball Varsity Management System</strong> – designed to handle player records, game stats, and scheduling.</li>
+        <li>👥 <strong>Youth Organization Management Platforms</strong> – systems that centralize youth data and activities across barangays or municipalities.</li>
+        <li>📚 <strong>Learning Management System for Grade School Students</strong> – playful and intuitive learning platforms with kid-friendly UIs.</li>
+        <li>🧾 <strong>Inventory & POS Systems with QR Integration</strong> – complete with email alerts, QR scanning for sales tracking, and EOQ/reorder calculations.</li>
+        <li>📝 <strong>Personalized Blogs and Messaging Apps</strong> – including secure 1-on-1 communication features and private journal sections.</li>
+        </ul>
+
+        <p>
+        I enjoy combining clean UI/UX design with solid backend logic to build systems that are both visually appealing and functionally robust. 
+        I'm currently enhancing my skills in object-oriented programming, UI/UX with Figma, and secure, scalable web development.
+        </p>
+
+        <p>
+        I'm always eager to learn, explore new technologies, and turn ideas into working solutions.
+        </p>
+
+        <a href="YourCV.pdf" class="btn" download>Download CV</a>
+    </div>
+    </section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" data-aos="fade-up">
+      <img src="pup.png" alt="Basketball Varsity Management System screenshot" />
+      <h3>Basketball Varsity Management System</h3>
+      <p>Designed to handle player records, game stats, and scheduling efficiently.</p>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="youth-org-platform.jpg" alt="Youth Organization Management Platform screenshot" />
+      <h3>Youth Organization Management Platforms</h3>
+      <p>Centralizes youth data and activities across barangays and municipalities.</p>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="learning-management.jpg" alt="Learning Management System screenshot" />
+      <h3>Learning Management System for Grade School Students</h3>
+      <p>Kid-friendly UI with playful, intuitive learning features.</p>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="inventory-pos.jpg" alt="Inventory & POS System screenshot" />
+      <h3>Inventory & POS Systems with QR Integration</h3>
+      <p>Includes smart alerts, QR scanning for sales tracking, and EOQ/reorder calculations.</p>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+      <img src="blog-messaging.jpg" alt="Personalized Blog and Messaging App screenshot" />
+      <h3>Personalized Blogs and Messaging Apps</h3>
+      <p>Secure 1-on-1 communication and private journal sections.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-in">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+  <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module">
+    </script>
+</body>
+</html>
